@@ -37,7 +37,7 @@ botaoCapturado.addEventListener("click", function(evento){
         */
        //RadioButons
 
-       let radioSelecionado;
+       //let radioSelecionado;
        
        radioButtons.forEach(radio => {
            //console.log(`RadioButton: ${radio.checked} `);
