@@ -162,5 +162,3 @@ email.addEventListener("keyup", function () {
 
   }
 })
-
-/* Objetivo da aula 14: Conhecer e praticar alguns cocneitos sobre JSON e Storage */
