@@ -1,0 +1,47 @@
+/* SKELETON */
+.skeleton-conteiner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+   }
+    
+   .skeleton-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1em 2em;
+    box-shadow: 2px 2px 5px lightgrey;
+    animation: loadingContainerAnimation 2s linear infinite;
+   }
+    
+   .skeleton-text {
+    animation: loadingTextAnimation 2s linear infinite;
+    width: 150px;
+    display: block;
+    padding: 0.7rem;
+   }
+    
+   @keyframes loadingContainerAnimation {
+    0% {
+      background: white;
+    }
+    50% {
+      background: rgb(182, 177, 177);
+    }
+    100% {
+      background: white;
+    }
+   }
+    
+   @keyframes loadingTextAnimation {
+    0% {
+      background: white;
+    }
+    50% {
+      background: rgb(128, 123, 123);
+    }
+    100% {
+      background: white;
+    }
+   }

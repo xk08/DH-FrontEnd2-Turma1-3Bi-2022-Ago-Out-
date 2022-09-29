@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./styles/tarefas.css">
+  <link rel="stylesheet" href="./styles/skeleton-loader.css">
+
+  <!-- Importando via CDN -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="scripts/validacoes/utils.js" defer></script>
+  <script src="scripts/tarefas/tarefas_pendentes.js" defer></script>
+  <script src="scripts/tarefas/tarefas_concluidas.js" defer></script>
+  <script src="scripts/animations/skeleton_loader.js" defer></script>
+  <script src="scripts/tarefas/tasks.js" defer></script>
+
+  <title>To-Do App</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Tarefas</a>
+    </nav>
+
+    <div class="user-info">
+      <p id="nomeUsuarioEmTarefas"></p>
+      <p id="closeApp" onclick="encerrarSessao()">Finalizar sessão</i>
+      </p>
+    </div>
+  </header>
+
+
+  <form class="nova-tarefa">
+    <input id="novaTarefa" type="text" placeholder="Descrição da tarefa">
+
+    <div>
+      <input type="radio" name="grupoRadio" checked value="false"> Pendente
+      <input type="radio" name="grupoRadio" value="true"> Concluída
+    </div>
+
+    <button id="botaoTarefas">
+      <img src="./assets/plus.png" alt="Adicionar uma nova tarefa">
+    </button>
+  </form>
+
+
+  <ul class="tarefas-pendentes">
+  </ul>
+
+  <h2 class="tarefas-terminadas-titulo">Tarefas terminadas</h2>
+  <ul class="tarefas-terminadas">
+
+  </ul>
+
+  
+</body>
+
+</html>
